@@ -2,9 +2,12 @@ import React from "react";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold mt-3 ml-3">Hello there</h1>
-      <h2>Seems to be working properly</h2>
+    <div className="bg-slate-800 w-full h-full">
+      <header className="bg-amber-600">
+        Your all time classics. In your new favourite website
+      </header>
+      <main className="bg-red-600"></main>
+      <footer className="bg-green-500"></footer>
     </div>
   );
 };
