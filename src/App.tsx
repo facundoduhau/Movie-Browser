@@ -2,12 +2,12 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="bg-slate-800 w-full h-full">
-      <header className="bg-amber-600">
-        Your all time classics. In your new favourite website
+    <div className="w-screen min-h-screen bg-linear-to-bl from-slate-950  to-slate-900">
+      <header className="flex flex-col justify-center items-center">
+        <h1 className="w-fit text-white text-3xl">
+          Your all time classics, in your new favorite website
+        </h1>
       </header>
-      <main className="bg-red-600"></main>
-      <footer className="bg-green-500"></footer>
     </div>
   );
 };
