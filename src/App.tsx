@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
@@ -14,6 +15,18 @@ const API_OPTIONS = {
 };
 
 const App = () => {
+  const [errorMessage, setErrorMessage] = useState("");
+  const fetchMoviesFromTMDB = async () => {
+    try {
+      console.log("Hello");
+    } catch (e) {
+      console.log(`Error fetching movie: ${e}`);
+      setErrorMessage(
+        "There was an unexpected error trying to fetch movies. Please try again later",
+      );
+    }
+  };
+
   return (
     <div className="w-screen h-screen bg-linear-to-bl from-slate-950  to-slate-900 flex flex-col items-center">
       <Header />
