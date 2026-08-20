@@ -1,10 +1,6 @@
 import type { MovieListProps } from "../utils/types";
 
-const MovieList = ({
-  movieList,
-  isLoading,
-  errorMessage,
-}: MovieListProps) => {
+const MovieList = ({ movieList, isLoading, errorMessage }: MovieListProps) => {
   if (isLoading) {
     return <p>Loading movies...</p>;
   }
@@ -20,7 +16,9 @@ const MovieList = ({
   return (
     <div>
       {movieList.map((movie) => (
-        <p>{movie.title}</p>
+        <p key={movie.id} data-id={movie.id}>
+          {movie.title}
+        </p>
       ))}
     </div>
   );

@@ -26,12 +26,12 @@ const App = () => {
           const data = await response.json();
           console.log(data);
 
-          if (data.Response == false) {
+          if (data.response == false) {
             setErrorMessage(data.Error || "Failed to fetch movies");
             setMovieList([]);
             return;
           } else {
-            setMovieList(data.Results || []);
+            setMovieList(data.results || []);
           }
         }
       } catch (e) {

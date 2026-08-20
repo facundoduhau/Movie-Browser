@@ -1,5 +1,6 @@
 export type Movie = {
   title: string;
+  id: number;
 };
 
 export type MainContentProps = {
