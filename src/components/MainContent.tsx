@@ -1,7 +1,7 @@
 import HeroText from "./HeroText";
-import MovieList from "./MovieList";
 import Searchbar from "./Searchbar";
 import type { MainContentProps } from "../utils/types";
+import MovieCard from "./MovieCard";
 
 const MainContent = ({
   movieList,
@@ -12,7 +12,7 @@ const MainContent = ({
     <main className="text-white w-full flex flex-col">
       <HeroText />
       <Searchbar />
-      <MovieList
+      <MovieCard
         movieList={movieList}
         isLoading={isLoading}
         errorMessage={errorMessage}
