@@ -1,13 +1,10 @@
-import MovieList from "./MovieList";
-import type { MovieListProps } from "../utils/types";
+import type { Movie } from "../utils/types";
 
-const MovieCard = ({ movieList, isLoading, errorMessage }: MovieListProps) => {
+const MovieCard = ({ movie }: { movie: Movie }) => {
   return (
-    <MovieList
-      movieList={movieList}
-      isLoading={isLoading}
-      errorMessage={errorMessage}
-    />
+    <div>
+      <p>{movie.title}</p>
+    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import { Loader2 } from "lucide-react";
 import type { MovieListProps } from "../utils/types";
+import MovieCard from "./MovieCard";
 
 const MovieList = ({ movieList, isLoading, errorMessage }: MovieListProps) => {
   if (isLoading) {
@@ -24,9 +25,7 @@ const MovieList = ({ movieList, isLoading, errorMessage }: MovieListProps) => {
       <div className="ml-20 mr-5 mt-5 ">
         <div className="grid gap-4 grid-cols-4">
           {movieList.map((movie) => (
-            <p key={movie.id} data-id={movie.id}>
-              {movie.title}
-            </p>
+            <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
       </div>
