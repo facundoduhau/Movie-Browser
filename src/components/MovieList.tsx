@@ -20,10 +20,10 @@ const MovieList = ({ movieList, isLoading, errorMessage }: MovieListProps) => {
   }
 
   return (
-    <div>
-      <p className="text-2xl font-bold ml-20 mt-5">Movies:</p>
-      <div className="ml-20 mr-5 mt-5 ">
-        <div className="grid gap-4 grid-cols-4">
+    <div className="flex flex-col">
+      <p className="text-4xl font-bold ml-40 mt-5">Movies:</p>
+      <div className="mt-10 mb-10 ml-40 mr-40">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {movieList.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

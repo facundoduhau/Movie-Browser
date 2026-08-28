@@ -1,6 +1,9 @@
 export type Movie = {
   title: string;
   id: number;
+  poster_path: string
+  vote_average: number
+  release_date: string
 };
 
 export type MainContentProps = {
