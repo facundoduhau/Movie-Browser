@@ -7,7 +7,7 @@ const Footer = () => {
           href="https://github.com/facundoduhau"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold text-violet-200 hover:underline"
+          className="font-bold text-white hover:underline"
         >
           facundoduhau
         </a>
