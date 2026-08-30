@@ -3,7 +3,7 @@ import { useState } from "react";
 const Searchbar = () => {
   const [searchValue, setSearchValue] = useState("");
   return (
-    <div className="flex flex-col font-poppins">
+    <div className="flex flex-col font-poppins mt-5">
       <div className="flex flex-col justify-center items-center text-center">
         <input
           type="search"
