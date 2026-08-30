@@ -11,3 +11,6 @@ export const API_OPTIONS = {
 };
 
 export const ENDPOINT_SORT_BY_POPULARITY = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+
+export const ENDPOINT_SEARCH_MOVIES = (query: string) =>
+  `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`;
